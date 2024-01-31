@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf')
+    format('opentype');
+    font-display: swap;
+}
+:root {
+    font-family: 'Gilroy';
+}
+  
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1083EE;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #066ccc;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #314259 !important;
+}
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+
+.top-header{
+    transition: all 500ms ease;
+    z-index: 100;
+}
+.scroll-nav{
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.mt-6{
+    margin-top: 6rem !important;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .form-check input[type="checkbox"] {
+        --active: #1083ee;
+        --active-inner: #fff;
+        --focus: 2px rgba(39, 94, 254, 0.3);
+        --border: #bbc1e1;
+        --border-hover: #1083ee;
+        --background: #fff;
+        --disabled: #f6f8ff;
+        --disabled-inner: #e1e6f9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 21px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+
+    .form-check input[type="checkbox"]:after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+            opacity var(--d-o, 0.2s);
+    }
+
+    .form-check input[type="checkbox"]:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: 0.3s;
+        --d-t: 0.6s;
+        --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    .form-check input[type="checkbox"]:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: 0.9;
+    }
+
+    .form-check input[type="checkbox"]:disabled:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+    }
+
+    .form-check input[type="checkbox"]:disabled + label {
+        cursor: not-allowed;
+    }
+
+    .form-check input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+    }
+
+    .form-check input[type="checkbox"]:focus {
+        box-shadow: 0 0 0 var(--focus);
+    }
+
+    .form-check input[type="checkbox"]:not(.switch) {
+        width: 21px;
+    }
+
+    .form-check input[type="checkbox"]:not(.switch):after {
+        opacity: var(--o, 0);
+    }
+
+    .form-check input[type="checkbox"]:not(.switch):checked {
+        --o: 1;
+    }
+
+    .form-check input[type="checkbox"] + label {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+
+    .form-check input[type="checkbox"]:not(.switch) {
+        border-radius: 7px;
+    }
+
+    .form-check input[type="checkbox"]:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+    }
+
+    .form-check input[type="checkbox"]:not(.switch):checked {
+        --r: 43deg;
+    }
+}
+
+.form-check * {
+    box-sizing: inherit;
+}
+
+.form-check *:before,
+.form-check *:after {
+    box-sizing: inherit;
+}
+.form-control{
+    border-radius: 8px;
+    font-size: .875rem;
+    line-height: 1.7;
+    padding: 12px;
+    height: 48px;
+    border-color: #c4d9ff;
+    border-width: 2px;
+}
+.form-control:focus{
+    box-shadow: 0 4px 8px -5px rgba(0,0,0,.34);
+    border-color: #1083EE;
+}
+.form-control::placeholder {
+    font-weight: 300;
+    color: #ccc;
+}
+
+label{
+    font-weight: 500;
+    color: #314259;
+}
+
+/* text css */
+.text-primary{
+    color: #1083EE;
+}
+.justified-text {
+	text-align: justify;
+}
+span{
+    color: #6c757d;
+}
+
+.fs-7{
+    font-size: 0.9rem;
+}
+
+a{
+    color: #1083EE;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    color: #1083EE;
+}
+
+.nav-link{
+    color: #1083EE !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-right: 1.5rem !important;
+}
+
+/* buttons css */
+.btn{
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.btn-primary{
+    background-color: #1083EE;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.btn-black{
+    background-color: #0d0d1dea;
+    color: #fff;
+}
+.btn-black:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.card{
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.price-active{
+    background-color: #e1e1e1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.box-shadow-1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.trello-shadow{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.tailwind-shadow{
+    box-shadow: 0 13px 22px rgba(70,74,85,.08);
+}
+
+.social i{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: white;
+}
+.footer-link{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.footer-link:hover{
+    color: white;
+    font-weight: 700;
+    transition: color 0.5s ease, font-weight 0.5s ease;
+}
+.footer-item{
+    margin-bottom: 0.9rem;
+}
+.top-shadow{
+    box-shadow: rgba(3, 65, 107, 0.06) 0px 2px 4px 0px inset;
+}
+
+.my-7{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+.brand-text-color{
+    color: #314259 !important;
+}
+
+.shadow-13{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
